@@ -169,7 +169,7 @@ likely place to find something. Volatility, drawdown and extremes are more plaus
 | 2 | ✅ | `2_build_prices.py`: raw 1m → per-contract daily → front, back-adjusted → `data/prices/` |
 | 3 | ✅ | `3_build_panel.py`: features + release timing + outcomes → `data/panel/cot_panel.parquet`, with tests |
 | **Gate A** | see below | data checks |
-| 4 | next | `4_explore.py`: Stages 1–2 → `reports/01_explore.html` |
+| 4 | ✅ | `4_explore.py`: Stages 1–2 → `reports/01_explore.html`, `results/explore_*.csv`. Short version: asset managers move with price in the same week (r +0.28, same sign in all sub-periods); dealers and leveraged funds react to the previous 1–2 weeks of price; no k > 0 lag clears the any-lag band |
 | **Gate B** | | review together; lock primary tests and pass bar in `HYPOTHESES.md` |
 | 5 | | `5_test.py`: Stages 3–4 → `reports/02_tests.html`, `results/tests.csv`, `FINDINGS.md` |
 | **Gate C** | | FOUND → decide next phase. NONE → document and choose the next source. |

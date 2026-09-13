@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "reports",
+      "runtimeExecutable": "I:\\PycharmProjects\\Market_regime_detection\\venv\\Scripts\\python.exe",
+      "runtimeArgs": ["-m", "http.server", "8765", "--bind", "127.0.0.1", "--directory", "I:\\PycharmProjects\\Market_regime_detection\\reports"],
+      "port": 8765
+    }
+  ]
+}
